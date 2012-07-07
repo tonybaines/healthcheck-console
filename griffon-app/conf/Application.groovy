@@ -10,7 +10,7 @@ application {
 }
 mvcGroups {
     // MVC Group for "healthcheck-console"
-    'healthcheck-console' {
+    'healthcheckConsole' {
         model      = 'healthcheck.console.HealthcheckConsoleModel'
         view       = 'healthcheck.console.HealthcheckConsoleView'
         controller = 'healthcheck.console.HealthcheckConsoleController'

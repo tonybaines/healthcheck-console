@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/healthcheck-console.iml" filepath="$PROJECT_DIR$/healthcheck-console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/healthcheck-console-griffonPluginFixes.iml" filepath="$PROJECT_DIR$/healthcheck-console-griffonPluginFixes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/healthcheck-console-griffonPlugins.iml" filepath="$PROJECT_DIR$/healthcheck-console-griffonPlugins.iml" />
+    </modules>
+  </component>
+</project>
+
