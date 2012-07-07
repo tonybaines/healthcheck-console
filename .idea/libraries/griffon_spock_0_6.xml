@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="griffon-spock-0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/spock-0.6/dist/griffon-spock-compile-0.6.jar!/" />
+      <root url="jar://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/spock-0.6/dist/griffon-spock-test-0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/spock-0.6/dist/griffon-spock-test-0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

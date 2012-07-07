@@ -7,18 +7,16 @@
       <sourceFolder url="file://$MODULE_DIR$/griffon-app/models" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/griffon-app/views" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/griffon-app/ratpack" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/griffon-app/services" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/unit" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/target/classes" />
-      <excludeFolder url="file://$MODULE_DIR$/target/test-classes" />
+      <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/griffon-app/ratpack" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="griffon-1.0.0" level="project" />
-    <orderEntry type="module-library">
-      <library name="Griffon:lib">
+    <orderEntry type="library" name="griffon-1.0.0" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="Griffon:lib (Healthcheck-console)">
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
         </CLASSES>
@@ -27,9 +25,9 @@
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="healthcheck-console-griffonPluginFixes" />
-    <orderEntry type="library" name="griffon-1.0.0" level="application" />
-    <orderEntry type="module" module-name="healthcheck-console-griffonPlugins" />
+    <orderEntry type="module" module-name="Healthcheck-console-griffonPlugins" />
+    <orderEntry type="library" name="griffon-rest-0.8.1" level="project" />
+    <orderEntry type="library" name="griffon-spock-0.6" level="project" />
   </component>
 </module>
 

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="griffon-rest-0.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/rest-0.8.1/dist/griffon-rest-runtime-0.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/rest-0.8.1/dist/griffon-rest-0.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
