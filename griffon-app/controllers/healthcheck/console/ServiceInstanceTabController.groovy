@@ -10,9 +10,5 @@ class ServiceInstanceTabController {
         model.mvcId = args.mvcId
 
         createMVCGroup('serviceHealthPanel', "${model.mvcId}_health", [uri: model.uri, healthPanel: view.healthPanel])
-//        execOutsideUI {
-//            def stats = healthcheckDataService.getStatistics(uri)
-//            def info = healthcheckDataService.getInformation(uri)
-//        }
     }
 }

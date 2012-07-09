@@ -10,7 +10,13 @@ class ServiceHealthPanelController {
         model.uri = args.uri
         execOutsideUI {
             def health = healthcheckDataService.getHealth(model.uri)
-            model.health = health.QuoteEngineApplication.status
+
+            health.each { componentName, healthData ->
+                createMVCGroup('componentHealth', "${componentName}_health_component",
+                        [componentName: componentName,
+                         componentData: health[componentName],
+                         parent: view.componentHealthContainer])
+            }
         }
     }
 
@@ -18,12 +24,4 @@ class ServiceHealthPanelController {
     //    // this method is called when the group is destroyed
     // }
 
-    /*
-        Remember that actions will be called outside of the UI thread
-        by default. You can change this setting of course.
-        Please read chapter 9 of the Griffon Guide to know more.
-       
-    def action = { evt = null ->
-    }
-    */
 }
