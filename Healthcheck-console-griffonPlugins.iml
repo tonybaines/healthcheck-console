@@ -7,6 +7,7 @@
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/rest-0.8.1" />
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/spock-0.6" />
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/swing-1.0.0" />
+    <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/swingx-builder-0.6" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="griffon-rest-0.8.1" level="project" />
