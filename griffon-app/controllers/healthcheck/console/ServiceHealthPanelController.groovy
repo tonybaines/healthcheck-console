@@ -9,14 +9,20 @@ class ServiceHealthPanelController {
     void mvcGroupInit(Map args) {
         model.uri = args.uri
         model.mvcId = "${args.mvcId}_health_component"
+
+        def health = healthcheckDataService.getHealth(model.uri)
+        health.each { componentName, healthData ->
+            createMVCGroup('componentHealth', "${model.mvcId}_$componentName",
+                    [componentName: componentName,
+                     parent: view.componentHealthContainer])
+        }
+    }
+
+    def refresh = { evt = null ->
         execOutsideUI {
             def health = healthcheckDataService.getHealth(model.uri)
-
             health.each { componentName, healthData ->
-                createMVCGroup('componentHealth', "${model.mvcId}_$componentName",
-                        [componentName: componentName,
-                         componentData: health[componentName],
-                         parent: view.componentHealthContainer])
+                app.controllers["${model.mvcId}_$componentName"].updateHealthData(healthData)
             }
         }
     }

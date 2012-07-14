@@ -10,7 +10,10 @@ log4j = {
     info   'griffon.util',
            'griffon.core',
            'griffon.swing',
-           'griffon.app'
+           'griffon.app',
+           'org.apache.http',
+           'groovyx.net',
+           'org.mortbay'
 }
 
 griffon.rest.injectInto = ["controller", "service"]

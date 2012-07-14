@@ -24,4 +24,10 @@ class HealthcheckConsoleController {
     def quit = {
         app.shutdown()
     }
+
+    def refreshAll = {
+        serviceInstances.each { name, uri ->
+            app.controllers[name].refreshAll()
+        }
+    }
 }

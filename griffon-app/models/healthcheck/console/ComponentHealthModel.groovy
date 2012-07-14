@@ -6,6 +6,6 @@ import sun.awt.resources.awt
 
 class ComponentHealthModel {
     @Bindable String componentName
-    @Bindable String status
-    @Bindable String message
+    @Bindable String status = 'UNKNOWN'
+    @Bindable String message = 'Waiting for data'
 }

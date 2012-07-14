@@ -7,8 +7,12 @@ class ServiceInstanceTabController {
 
     void mvcGroupInit(Map args) {
         model.uri = args.uri
-        model.mvcId = "${args.mvcId}_health"
+        model.mvcId = "${args.mvcId}"
 
-        createMVCGroup('serviceHealthPanel', "${model.mvcId}", [uri: model.uri, mvcId: model.mvcId, healthPanel: view.healthPanel])
+        createMVCGroup('serviceHealthPanel', "${model.mvcId}_health", [uri: model.uri, mvcId: model.mvcId, healthPanel: view.healthPanel])
+    }
+
+    def refreshAll = {
+        app.controllers["${model.mvcId}_health"].refresh()
     }
 }

@@ -26,10 +26,15 @@ application(title: 'healthcheck-console',
                 accellerator: shortcut('Q'),
                 closure: controller.quit
         )
+        action(id: 'refreshAllAction',
+                name: 'Refresh All',
+                closure: controller.refreshAll
+        )
     }
 
     menuBar {
         menu('File') {
+            menuItem refreshAllAction
             menuItem quitAction
         }
     }
