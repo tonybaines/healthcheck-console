@@ -7,8 +7,8 @@ class ServiceInstanceTabController {
 
     void mvcGroupInit(Map args) {
         model.uri = args.uri
-        model.mvcId = args.mvcId
+        model.mvcId = "${args.mvcId}_health"
 
-        createMVCGroup('serviceHealthPanel', "${model.mvcId}_health", [uri: model.uri, healthPanel: view.healthPanel])
+        createMVCGroup('serviceHealthPanel', "${model.mvcId}", [uri: model.uri, mvcId: model.mvcId, healthPanel: view.healthPanel])
     }
 }
