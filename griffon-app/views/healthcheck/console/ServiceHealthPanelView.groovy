@@ -7,11 +7,12 @@ actions {
     )
 }
 panel(healthPanel) {
-    boxLayout(axis: javax.swing.BoxLayout.PAGE_AXIS)
+//    boxLayout(axis: javax.swing.BoxLayout.PAGE_AXIS)
+    migLayout()
     button refreshAction
     panel(constraints: context.CENTER, id: 'componentHealthContainer',
             border: compoundBorder(outer: emptyBorder(5),
                     inner: titledBorder(title: 'Health'))) {
-        boxLayout(axis: javax.swing.BoxLayout.PAGE_AXIS)
+        migLayout(layoutConstraints: 'wrap 2')
     }
 }

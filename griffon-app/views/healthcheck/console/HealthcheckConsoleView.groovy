@@ -28,12 +28,14 @@ application(title: 'healthcheck-console',
         )
         action(id: 'refreshAllAction',
                 name: 'Refresh All',
+                mnemonic: 'R',
+                accellerator: shortcut('R'),
                 closure: controller.refreshAll
         )
     }
 
     menuBar {
-        menu('File') {
+        menu(text: 'File', mnemonic: 'F') {
             menuItem refreshAllAction
             menuItem quitAction
         }
@@ -47,6 +49,6 @@ application(title: 'healthcheck-console',
             preferredSize: [480,40],
             backgroundPainter: compound
     )
-    tabbedPane id: 'tabGroup', tabPlacement: JTabbedPane.LEFT, constraints: context.CENTER
+    tabbedPane id: 'tabGroup', tabPlacement: JTabbedPane.TOP, constraints: context.CENTER
 
 }

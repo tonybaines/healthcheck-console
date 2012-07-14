@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/fest-0.9" />
+    <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/miglayout-0.4" />
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/ratpack-0.2" />
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/rest-0.8.1" />
     <content url="file://$USER_HOME$/.griffon/1.0.0/projects/healthcheck-console/plugins/spock-0.6" />
