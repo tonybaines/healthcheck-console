@@ -8,6 +8,7 @@ class ComponentHealthController {
     void mvcGroupInit(Map args) {
         model.status = args.componentData.status
         model.message = args.componentData.message
+
     }
 
     // void mvcGroupDestroy() {

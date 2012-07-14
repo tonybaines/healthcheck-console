@@ -31,7 +31,7 @@ class HealthcheckStubRatpackApp {
          "message" : "On-line",
          "timestamp" : "2012-07-06 14:48:50"
       },
-   "ExpedioFacadeApplication" :
+   "ShallowFacadeApplication" :
       {
          "status" : "RED",
          "message" : "No access to required objects: [].  Non-queryable objects: [BOOKS, AUTHORS].  Fully-available objects: [] as app_user",
@@ -283,7 +283,7 @@ class HealthcheckStubRatpackApp {
             ],
          "timestamp" : "2012-07-06 14:50:13"
       },
-   "ExpedioFacadeApplication" :
+   "ShallowFacadeApplication" :
       {
          "totalRequests" : 25,
          "totalCompletedResponses" : 24,
@@ -756,9 +756,9 @@ class HealthcheckStubRatpackApp {
             ],
          "timestamp" : "2012-07-06 14:49:56"
       },
-   "ExpedioFacadeApplication" :
+   "ShallowFacadeApplication" :
       {
-         "componentName" : "ExpedioFacade",
+         "componentName" : "ShallowFacade",
          "componentVersion" : "1.3.0-SNAPSHOT:https://subversion/svn/app/app/trunk@r5122:2012-07-05T17:30:23-BST",
          "componentProperties" :
             [
