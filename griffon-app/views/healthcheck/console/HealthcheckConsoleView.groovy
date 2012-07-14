@@ -1,5 +1,7 @@
 package healthcheck.console
-
+/*
+ * The top level view, handles menus and owns the tab pane
+ */
 
 import java.awt.Color
 import org.jdesktop.swingx.painter.GlossPainter
@@ -10,7 +12,7 @@ matte = mattePainter(fillPaint: new Color(51, 51, 51))
 compound = compoundPainter(painters: [matte, stripes, gloss])
 
 application(title: 'healthcheck-console',
-        preferredSize: [1024, 500],
+        preferredSize: [1024, 700],
         pack: true,
         //location: [50,50],
         locationByPlatform: true,

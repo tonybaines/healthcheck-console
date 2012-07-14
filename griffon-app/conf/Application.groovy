@@ -9,6 +9,20 @@ application {
     //frameClass = 'javax.swing.JFrame'
 }
 mvcGroups {
+    // MVC Group for "componentInfo"
+    'componentInfo' {
+        model      = 'healthcheck.console.ComponentInfoModel'
+        view       = 'healthcheck.console.ComponentInfoView'
+        controller = 'healthcheck.console.ComponentInfoController'
+    }
+
+    // MVC Group for "serviceInfoPanel"
+    'serviceInfoPanel' {
+        model      = 'healthcheck.console.ServiceInfoPanelModel'
+        view       = 'healthcheck.console.ServiceInfoPanelView'
+        controller = 'healthcheck.console.ServiceInfoPanelController'
+    }
+
     // MVC Group for "componentHealth"
     'componentHealth' {
         model      = 'healthcheck.console.ComponentHealthModel'

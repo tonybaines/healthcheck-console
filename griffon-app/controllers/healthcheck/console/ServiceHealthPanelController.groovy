@@ -14,21 +14,17 @@ class ServiceHealthPanelController {
         health.each { componentName, healthData ->
             createMVCGroup('componentHealth', "${model.mvcId}_$componentName",
                     [componentName: componentName,
+                     mvcId: "${model.mvcId}_$componentName",
                      parent: view.componentHealthContainer])
         }
     }
 
     def refresh = { evt = null ->
-        execOutsideUI {
-            def health = healthcheckDataService.getHealth(model.uri)
-            health.each { componentName, healthData ->
-                app.controllers["${model.mvcId}_$componentName"].updateHealthData(healthData)
-            }
+        def health = healthcheckDataService.getHealth(model.uri)
+        health.each { componentName, healthData ->
+            app.controllers["${model.mvcId}_$componentName"].updateHealthData(healthData)
         }
+        app.event 'HealthRefreshed'
     }
-
-    // void mvcGroupDestroy() {
-    //    // this method is called when the group is destroyed
-    // }
 
 }

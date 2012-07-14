@@ -1,7 +1,7 @@
 package healthcheck.console
 
 // the 'parent' property is injected as part of the arguments map when this
-// instance of the componentHealth MVC group was created
+// instance of the MVC group was created
 panel(parent) {
     label(text: bind {
                 /* Using the closure form allows transformation of bound model values */
@@ -11,8 +11,12 @@ panel(parent) {
     textField(editable: false,
             text: bind(source: model, 'message'),
             background: bind {
-                model.status == "GREEN" ? Color.GREEN : Color.RED
+                switch (model.status) {
+                    case "GREEN": Color.GREEN; break
+                    case "RED": Color.RED; break
+                    default: Color.LIGHT_GRAY
+                }
             },
-            constraints: 'span 3, left, grow'
+            constraints: 'left, grow'
     )
 }

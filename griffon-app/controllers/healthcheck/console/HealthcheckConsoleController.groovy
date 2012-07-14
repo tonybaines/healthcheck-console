@@ -4,8 +4,8 @@ class HealthcheckConsoleController {
     def serviceInstances = [
             'stub1':'http://localhost:5000/healthcheck-console/healthcheckStub/',
             'stub2':'http://localhost:5000/healthcheck-console/healthcheckStub/',
-            'stub3':'http://localhost:5000/healthcheck-console/healthcheckStub/',
-            'stub4':'http://localhost:5000/healthcheck-console/healthcheckStub/',
+//            'stub3':'http://localhost:5000/healthcheck-console/healthcheckStub/',
+//            'stub4':'http://localhost:5000/healthcheck-console/healthcheckStub/',
     ]
 
     // these will be injected by Griffon
